@@ -8,21 +8,21 @@ Htm2pdf is a simple tool to convert your HTML files into PDF documents.
 
 To use this tool without setting up Python:
 1. Go to the [Releases](../../releases) page.
-2. Download the version for your computer.
-3. Run the downloaded file.
+2. Download the `htm2pdf` Linux executable file.
+3. Open your terminal, make it executable (`chmod +x htm2pdf`), and run it (`./htm2pdf`).
 
 ## Features & Instructions
 
-When you run the tool, simply drag and drop your HTML file into the window and press Enter. Then, choose one of these options:
+When you run the tool, simply drag and drop your HTML file into the window and press Enter. Then, follow the simple questions it asks you:
 
-* **Option 1: Single Continuous Page**
-  Makes one very long PDF page. Good for saving web articles without page cuts.
-* **Option 2: Standard A4 Pages**
-  Splits the PDF into normal printable A4 pages.
-* **Option 3: Custom Split**
-  Type a specific text marker. The tool will start a new PDF page every time it sees that text.
-* **Monochrome Mode**
-  It will ask if you want black text and borders while keeping the background color. Type `y` for yes or `n` for no.
+* **Continuous Single-Page PDF (Type `1`)**
+  Makes one very long PDF page. Good for saving long web articles without annoying page cuts.
+* **Standard A4 Pages (Type `2`)**
+  Splits the PDF into normal printable A4 pages, just like a standard printer.
+* **Custom Split (Type `3`)**
+  You type a specific text marker. The tool will cut the document and start a new PDF page every time it sees that exact text.
+* **Monochrome Print Mode**
+  It will ask if you want to turn text and borders black while keeping background colors. Type `y` for yes or `n` for no.
 
 ## Running from Source (For Developers)
 
