@@ -11,9 +11,9 @@
 If you do not want to install Python or set up developer environments, you can use the standalone executable:
 
 1. Go to the **[Releases](../../releases)** page of this repository.
-2. Download the `htm2pdf` executable file for your operating system (currently available for Linux).
-3. If on Linux/macOS, open your terminal, navigate to your download folder, and make it executable: `chmod +x htm2pdf`
-4. Run the file: `./htm2pdf`
+2. Download the executable file for your operating system (available for Windows, macOS, and Linux).
+3. If on Linux/macOS, open your terminal, navigate to your download folder, and make it executable: `chmod +x htm2pdf-linux` (or macos)
+4. Run the file.
 5. Drag and drop your `.html` or `.htm` file into the terminal window when prompted and press Enter!
 
 ---
@@ -77,4 +77,5 @@ python htm2pdf.py
 ---
 
 ## 🔮 Future Updates
-We are actively working on pushing PyInstaller one-file executable releases for **Windows** and **macOS** as well! This ensures full click-and-run support universally without touching a terminal.
+Available for all three OSes (Windows, macOS, Linux). 
+In the future, there is a chance that we get a GUI for this tool, only if Heisenberg feels that it helps, unless Heisenberg is a terminal guy.
