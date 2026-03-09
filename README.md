@@ -1,75 +1,40 @@
-# Htm2pdf 📄✨
+**🚨 NOTE: Generative AI is used in this project. Heisenberg only planned it and verified the functions, but the most code is written by AI. 🚨**
 
-Welcome to **Htm2pdf**! A powerful, elegant, and interactive CLI tool to convert your HTML files directly into beautiful, high-quality PDFs. 
+# Htm2pdf
 
-## 🚀 Quick Start (No Setup Required!)
+Htm2pdf is a simple tool to convert your HTML files into PDF documents.
 
-If you just want to use the tool **without** the hassle of setting up Python, installing libraries, or configuring heavy environments:
+## Quick Start
 
-👉 **[Go to the Releases page](../../releases)** and download the standalone executable for your operating system. Simply download, run, and you are ready to convert!
+To use this tool without setting up Python:
+1. Go to the [Releases](../../releases) page.
+2. Download the version for your computer.
+3. Run the downloaded file.
 
----
+## Features & Instructions
 
-## ✨ Features & How They Work
+When you run the tool, simply drag and drop your HTML file into the window and press Enter. Then, choose one of these options:
 
-Htm2pdf provides an interactive Command Line Interface (CLI) that guides you through the conversion process. Once you run the tool, drop your HTML file into the terminal, and choose from the following amazing features:
+* **Option 1: Single Continuous Page**
+  Makes one very long PDF page. Good for saving web articles without page cuts.
+* **Option 2: Standard A4 Pages**
+  Splits the PDF into normal printable A4 pages.
+* **Option 3: Custom Split**
+  Type a specific text marker. The tool will start a new PDF page every time it sees that text.
+* **Monochrome Mode**
+  It will ask if you want black text and borders while keeping the background color. Type `y` for yes or `n` for no.
 
-### 1. 📜 Continuous Single-Page PDF Mode
-Perfect for web pages, receipts, or long articles. It seamlessly flattens the entire HTML document into one very long, continuous PDF page. No awkward page cuts!
+## Running from Source (For Developers)
 
-### 2. 🖨️ Standard A4 Paginated PDF Mode
-Want a traditional, printable document? This mode smartly converts your web page into standard A4-sized pages. 
+If you want to run the code yourself using Python:
 
-### 3. ✂️ Custom Page-Break Mode
-Advanced user? You can provide a custom string marker. The tool will mathematically slice the HTML document exactly at those markers and render perfectly scaled, individual pages.
+1. Make sure Python 3.8+ is installed.
+2. Open your terminal in the project folder.
+3. (Optional) Create a virtual environment: `python -m venv venv` and activate it.
+4. Install requirements: `pip install playwright`
+5. Install the browser engine: `playwright install chromium`
+6. Run the tool: `python htm2pdf.py`
 
-### 4. 🖤 Monochrome Print Mode
-Save your colored ink! This optional mode precisely targets text, borders, and SVGs, turning them pure black while beautifully preserving the background colors.
+## Future Updates
 
-### 🎮 How to Interact with the CLI
-1. Run the program.
-2. The CLI will ask: `Drop the HTML file here and press Enter:`. Simply drag and drop your `.html` or `.htm` file into the terminal.
-3. Type the number corresponding to your desired PDF layout mode (`1`, `2`, or `3`) and press Enter.
-4. Type `y` or `n` when asked to enable Monochrome mode.
-5. Sit back and let Htm2pdf do the heavy lifting! The output PDF will be saved in the same folder as your original HTML.
-
----
-
-## 🐍 For Developers: Running from Python Source
-
-If you prefer to run the script directly via Python, follow these steps to set up the environment.
-
-### 1. Requirements & OS Dependencies
-Make sure you have **Python 3.8+** installed on your system. 
-You will also need modern web rendering capabilities, which the `playwright` package handles.
-
-### 2. Setup the Environment
-Open your terminal and create a virtual environment (optional but recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-Install the required Python dependency:
-```bash
-pip install playwright
-```
-
-**Crucial Step:** Install the Playwright Chromium browser binary (this is the engine that renders the HTML):
-```bash
-playwright install chromium
-```
-
-### 3. Run the Script
-Now you can execute the Python script directly:
-```bash
-python htm2pdf.py
-```
-
----
-
-## 🔮 Future Roadmap
-
-We are constantly improving! Keep an eye out—**after some time, we will be releasing official PyInstaller One-File executables for Windows and macOS!** 
-
-This will mean true click-and-run support across all major platforms without needing the terminal or any installations. Directly download and use!
+We will soon release ready-to-use executable files for Windows and macOS, so you can just double-click and use it without any terminal.
